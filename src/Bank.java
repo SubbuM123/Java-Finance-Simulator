@@ -101,7 +101,7 @@ public class Bank {
             cds.put(c, b);
         }
     }
-    public void Simulate(int months) {
+    public double Simulate(int months) {
        SaveAccounts();
         for (int i = 0; i < months; ++i) {
             for (CD c : cds.values()) {
@@ -113,8 +113,11 @@ public class Bank {
             }
         accounts.get("Savings").Simulation();
        }
-       System.out.println(Total() + " end");
+       double total = Total();
+       System.out.println(total + " end");
+       
        ResetAccounts();
+       return total;
     }
     // public void SimulateSalary(int months, double salary) {
     //    iterate through each month and check and empty as needed

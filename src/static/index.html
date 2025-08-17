@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Cards</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-wrap">
+            <div class="card checking">
+                <div class="card-content">
+                    <h3>Checking Account</h3>
+                    <p>Enter checking account balance</p>
+                    <div class="save-row">
+                        <div class="cd-wrap">
+                            <p> Balance:</p>
+                        </div>
+                        <div class="cd-wrap-mm">
+                            <div class="apy">
+                                <input id="checkB" placeholder="0" size="10">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card savings">
+                <div class="card-content">
+                    <h3>Savings Account</h3>
+                    <p>Enter savings account balance</p>
+                    <div class="save-row">
+                        <div class="cd-wrap">
+                            <p> Balance:</p>
+                            <p> APY:</p>
+                        </div>
+                        <div class="cd-wrap">
+                            <div class="apy">
+                                <input id="saveB" placeholder="0" size="10">
+                                <span></span>
+                            </div>
+                            <div class="apy">
+                                <input id="saveA" placeholder="0" size="10">
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card CD">
+            <div class="card-content">
+                <h3>CDs</h3>
+                <p>Enter CD information</p>
+                <div class="cds-row">
+                    <div class="cd-wrap">
+                        <p> </p>
+                        <p> </p>
+                        <p> Balance:</p>
+                        <p> APY:</p>
+                        <p> Maturity (months):</p>
+                    </div>
+                    <div class="cd-wrap">
+                        <p> CD 1</p>
+                        <div class="apy">
+                            <input id="CD1B" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD1A" placeholder="0" size="10">
+                            <span>%</span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD1M" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cd-wrap">
+                        <p> CD 2</p>
+                        <div class="apy">
+                            <input id="CD2B" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD2A" placeholder="0" size="10">
+                            <span>%</span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD2M" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cd-wrap">
+                        <p> CD 3</p>
+                        <div class="apy">
+                            <input id="CD3B" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD3A" placeholder="0" size="10">
+                            <span>%</span>
+                        </div>
+                        <div class="apy">
+                            <input id="CD3M" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card MM">
+            <div class="card-content">
+                <h3>Money Market</h3>
+                <p>Enter Money Market information</p>
+                <div class="save-row">
+                    <div class="cd-wrap">
+                        <p> Balance:</p>
+                        <p> APY:</p>
+                    </div>
+                    <div class="cd-wrap-mm">
+                        <div class="apy">
+                            <input id="mmB" placeholder="0" size="10">
+                            <span></span>
+                        </div>
+                        <div class="apy">
+                            <input id="mmA" placeholder="0" size="10">
+                            <span>%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card Prediction">
+            <div class="card-content">
+                <h3>Projection</h3>
+                <div class="cd-wrap">
+                    <div class="apy-pr">
+                      <p>Projection (months):</p>
+                      <input id="n" placeholder="0" size="10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" onclick="sendNumber()">Submit</button>
+    <p id="result">___________________________________</p>
+    <script src="js/script.js"></script>
+</body>
+</html>
